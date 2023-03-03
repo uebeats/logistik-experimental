@@ -1,0 +1,83 @@
+#single-profile .header-single-profile {
+    height: 400px;
+
+    background-image: url('./../img/map-dots-trans.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+#single-profile .card-footer .reviews .checked {
+    color: orange;
+}
+
+#single-profile .card-footer {
+    background-color: white;
+    border: none;
+}
+
+#single-profile .card-footer a {
+    text-decoration: none;
+    transition: 500ms;
+}
+
+#single-profile .border-dark {
+    border-color: var(--color-primary) !important
+}
+
+#single-profile .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#single-profile .button-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#single-profile .bdge {
+    height: 21px;
+    background-color: orange;
+    color: #fff;
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 3px;
+}
+
+#single-profile .comments {
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+
+#single-profile .dot {
+    height: 7px;
+    width: 7px;
+    margin-top: 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#single-profile .hit-voting:hover {
+    color: blue;
+}
+
+#single-profile .hit-voting {
+    cursor: pointer;
+}
+
+@media screen and (min-width:320px) {
+
+    #single-profile .header-single-profile {
+        height: 280px;
+    }
+
+    #single-profile .list-group-horizontal {
+        flex-direction: column;
+    }
+}
