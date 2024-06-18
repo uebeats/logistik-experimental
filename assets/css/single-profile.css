@@ -1,14 +1,14 @@
 #single-profile .header-single-profile {
     height: 400px;
 
-    background-image: url('./../img/map-dots-trans.svg');
+    background-image: url('./../img/map-dots-dark.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: auto;
 }
 
-#single-profile .card-footer .reviews .checked {
+#single-profile .checked {
     color: orange;
 }
 

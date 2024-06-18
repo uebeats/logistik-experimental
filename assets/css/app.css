@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600;700&display=swap');
 
 
@@ -6,8 +6,9 @@
 
 
 :root {
-    --color-primary: #011C26;
+    --color-primary: #212529;
     --color-secondary: #F24405;
+    --color-secondary-hover: #FF5E23;
 }
 
 *,
@@ -21,7 +22,7 @@
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: .95rem;
     color: var(--color-primary);
 }
 
@@ -30,18 +31,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    max-width: 65rem;
+    max-width: 1140px;
+    margin: auto;
+    display: block;
 }
 
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 350px;
+    min-height: 530px;
     margin: auto;
 
     background-color: #fff;
-    background-image: url('./../img/map-dots-trans.svg');
+    background-image: url('./../img/map-dots-white.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -86,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 5px;
     top: 5px;
+}
+
+#reviews .card {
+    background-color: #f8f8f8;
+    min-height: 276px;
 }
 
 .splide .card-title {
@@ -144,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary:active,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
+    background-color: var(--color-secondary-hover);
+    border-color: var(--color-secondary-hover);
     color: white;
 
     transition: .2s ease-in-out;

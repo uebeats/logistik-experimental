@@ -22,39 +22,31 @@
 <body>
 
     <header>
-        <div class="collapse bg-light" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-primary">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-primary">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-primary">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-primary">Like on Facebook</a></li>
-                            <li><a href="#" class="text-primary">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-light bg-transparent py-4">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container py-3">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="./assets/img/logo-logistik-2.svg" height="45">
+                    <img src="./assets/img/logo-logistik-2-textwhite.svg" height="30">
                 </a>
-                <a href="#" class="btn btn-secondary ms-auto me-4"><i class="fa-solid fa-user-plus"></i> Registrarme</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-plus"></i>
+                                Crear Cuenta
+                                <span class="badge bg-light text-dark">Gratis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
+
 
     <main id="single-profile">
         <section class="bg-secondary">
@@ -82,7 +74,7 @@
 
                             <div class="card-body pb-0">
                                 <p class="mb-0"><small><i class="fa-solid fa-circle-check text-success"></i> Perfil
-                                        actualizado el 08-07-2022</small></p>
+                                        actualizado el 01-01-2024</small></p>
 
                             </div>
                             <div class="card-footer">
@@ -93,9 +85,14 @@
                                     <span class="fa-solid fa-star checked"></span>
                                     <span class="fa-solid fa-star"></span>
                                 </div>
-                                <a href="#fakelink" class="text-primary fw-bold"><small> Ver opiniones <i
+                                <a href="#reviews" class="text-primary fw-bold"><small> Ver opiniones <i
                                             class="fa-solid fa-angle-right"></i></small></a>
                             </div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#" class="btn btn-lg btn-primary w-100 rounded-0">
+                                Cotizar Servicio
+                            </a>
                         </div>
                     </aside>
                     <div class="col-12 col-sm-8 py-5">
@@ -121,49 +118,208 @@
                                     <li>Eum nulla tempore qui obcaecati dicta. </li>
                                     <li>Qui dolor alias ex voluptate rerum. </li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <div class="contact-info mt-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Información de contacto</h3>
-
-                                    <div class="button-contact p-2">
-                                        <a href="#" class="btn btn-secondary ms-auto w-100"><i
-                                                class="fa-solid fa-phone"></i> Teléfono</a>
-                                        <a href="#" class="btn btn-secondary ms-auto w-100"><i
-                                                class="fa-solid fa-envelope"></i> Correo Electrónico</a>
-                                        <a href="#" class="btn btn-secondary ms-auto w-100"><i
-                                                class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                                <p>Lorem ipsum dolor sit amet. Aut possimus provident ex consequatur tempora qui
+                                    asperiores
+                                    distinctio nam incidunt Quis aut dolores fugit. Id itaque libero ut corrupti
+                                    molestiae
+                                    ad
+                                    autem consequatur. Quo temporibus consequatur explicabo quisquam <em>Et
+                                        provident</em>.
+                                </p>
+                                <div id="reviews">
+                                    <h4 class="fw-bold">Opiniones</h4>
+                                    <div class="splide splide-reviews mb-5">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1079/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1078/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut. Amet, autem fuga officia obcaecati
+                                                                voluptas totam iusto illum!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1079/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1078/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut. Amet, autem fuga officia obcaecati
+                                                                voluptas totam iusto illum!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1079/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1078/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut. Amet, autem fuga officia obcaecati
+                                                                voluptas totam iusto illum!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1079/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body">
+                                                            <img src="https://picsum.photos/id/1078/60/60" alt=""
+                                                                class="rounded-pill mb-2">
+                                                            <h6 class="fw-bold">User profile <span
+                                                                    class="fa-solid fa-circle-check text-success"></span>
+                                                            </h6>
+                                                            <div class="reviews">
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star checked"></span>
+                                                                <span class="fa-solid fa-star"></span>
+                                                            </div>
+                                                            <p class="card-address">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Ipsa, temporibus ut. Amet, autem fuga officia obcaecati
+                                                                voluptas totam iusto illum!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                    <p class="text-end fw-bold"><small>*Las opiniones son de usuarios verificados <span
+                                                class="fa-solid fa-circle-check text-success"></span> que han contratado
+                                            el servicio.</small></p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>                                                                                      
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-12 mb-5">
-                        <h4>Ubicación en el mapa</h4>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9774088738573!2d-70.5934099259534!3d-32.82843453094743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9688051e6f86635d%3A0xe4f1d56494ac5a22!2sPje.%20Fernando%20Allegro%20128%2C%20Los%20Andes%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1657329531952!5m2!1ses-419!2scl"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-12">
-                        <h4>Opiniones</h4>
                     </div>
                 </div>
             </div>
@@ -171,51 +327,96 @@
 
     </main>
 
-    <footer class="container">
-        <div class="row row-cols-4 py-2 my-2 py-lg-5 my-lg-5">
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <p class="text-muted">© 2022</p>
-            </div>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row row-cols-4 px-5 py-lg-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <p class="text-muted">© 2022 - 2024 Logistik.click</p>
+                </div>
 
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
 
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
 
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registro en plataforma Logistik.click</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label
+                                fw-bold">Correo
+                                electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label
+                                fw-bold">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label
+                                fw-bold">Confirmar
+                                contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Enviar solicitud</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

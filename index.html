@@ -22,79 +22,69 @@
 <body>
 
     <header>
-        <div class="collapse bg-light" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-primary">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-primary">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-primary">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-primary">Like on Facebook</a></li>
-                            <li><a href="#" class="text-primary">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-light bg-transparent py-4">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container py-3">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="./assets/img/logo-logistik-2.svg" height="45">
+                    <img src="./assets/img/logo-logistik-2-white.svg" height="30">
                 </a>
-                <a href="#" class="btn btn-secondary ms-auto me-4"><i class="fa-solid fa-user-plus"></i> Registrarme</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="" class="btn btn-secondary">
+                                <i class="fa-solid fa-plus"></i>
+                                Crear Cuenta
+                                <span class="badge bg-light text-dark">Gratis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
 
-        <section class="hero-section py-5 text-center">
+        <section class="hero-section py-5 text-center bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 mx-auto">
-                        <h1 class="fw-bold text-primary">Encuentra al mejor proveedor logístico para ti</h1>
-                        <p class="lead text-muted">El lugar correcto para encontrar tu proveedor logístico en Chile</p>
+                        <h1 class="fw-bold text-white">El proveedor logístico que buscas a un click</h1>
+                        <p class="lead text-muted">Encuentra el mejor proveedor logístico para tu empresa en Chile</p>
                     </div>
                     <div class="box-search-home my-3">
                         <form class="row g-3 justify-content-center">
                             <div class="col-8">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control"
-                                        placeholder="Agencias, Transportistas o Embarcadores..." aria-label="Buscar"
+                                    <input type="text" class="form-control form-control-lg"
+                                        placeholder="Empresa de transporte..." aria-label="Buscar"
                                         aria-describedby="Buscar">
-                                    <button class="btn btn-primary" type="button" id="button-search"><i
-                                            class="fa-solid fa-search"></i> Buscar</button>
+                                    <button class="btn btn-secondary" type="button" id="button-search"><i
+                                        class="fa-solid fa-search"></i> </button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="message-alert">
-                        <p><span class="fa-solid fa-circle-check text-secondary"></span> Todos los servicios mostrados
-                            han
-                            pasado por un proceso de <a href="#" class="text-primary fw-bold">validación especial</a>
+                    <div class="message-alert text-muted">
+                        <p><span class="fa-solid fa-circle-check text-secondary"></span> 
+                            Todos los servicios mostrados han pasado por un proceso de <a href="#" class="text-muted fw-bold">validación especial.</a>
                         </p>
                     </div>
                 </div>
 
             </div>
         </section>
-        <div class="tracking">
+        <div class="tracking bg-dark">
             <img class="car" src="./assets/img/car.svg">
         </div>
 
         <div class="bg-light">
             <div class="container py-3">
-                <div class="row" style="margin-top: -70px">
+                <div class="row" style="margin-top: -50px">
                     <div class="col">
                         <div class="card shadow-sm hvr-float mb-4 mb-lg-0">
                             <div class="card-body">
@@ -149,7 +139,7 @@
                     <h3 class="fw-bold">Agencias de Aduana</h3>
                     <a href="#" class="text-secondary hvr-underline-from-right">Ver todas las agencias</a>
                 </div>
-                <div class="splide">
+                <div class="splide splide-business">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -163,7 +153,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="single-profile.html"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +170,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +187,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +204,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +248,7 @@
                     <h3 class="fw-bold">Transportistas</h3>
                     <a href="#" class="text-secondary hvr-underline-from-right">Ver todos los transportistas</a>
                 </div>
-                <div class="splide">
+                <div class="splide splide-business">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -272,7 +262,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +279,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -306,7 +296,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -323,7 +313,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -367,7 +357,7 @@
                     <h3 class="fw-bold">Embarcadores</h3>
                     <a href="#" class="text-secondary hvr-underline-from-right">Ver todos los embarcadores</a>
                 </div>
-                <div class="splide">
+                <div class="splide splide-business">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -381,7 +371,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -398,7 +388,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -415,7 +405,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -432,7 +422,7 @@
                                             Valparaíso</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="#"
-                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Contactar</a>
+                                                class="btn btn-secondary btn-sm w-100 fw-light stretched-link">Conocer más</a>
                                         </div>
                                     </div>
                                 </div>
@@ -445,48 +435,50 @@
 
     </main>
 
-    <footer class="container">
-        <div class="row row-cols-4 py-2 my-2 py-lg-5 my-lg-5">
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <p class="text-muted">© 2022</p>
-            </div>
-
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h5 class="fw-bold">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row row-cols-4 px-5 py-lg-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <p class="text-muted">© 2022 - 2024 Logistik.click</p>
+                </div>
+    
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-4 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <h5 class="fw-bold text-white">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
